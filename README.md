@@ -1,2 +1,3 @@
 # strapi-image-gallery
-Strapi Image Gallery plugin
+
+Image gallery for Strapi
