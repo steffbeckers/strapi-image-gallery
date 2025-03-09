@@ -65,7 +65,7 @@
     "displayName": "Image Gallery",
     "description": "Image gallery for Strapi"
   },
-  "name": "strapi-image-gallery",
+  "name": "@steffbeckers/strapi-image-gallery",
   "description": "Image gallery for Strapi",
   "license": "MIT",
   "repository": {
