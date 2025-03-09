@@ -3,6 +3,7 @@ import { PLUGIN_ID } from './pluginId';
 import { Initializer } from './components/Initializer';
 import { PluginIcon } from './components/PluginIcon';
 import ImageGalleryCustomField from './components/ImageGalleryCustomField';
+import { Images } from '@strapi/icons';
 
 export default {
   register(app: any) {
@@ -23,7 +24,7 @@ export default {
     app.customFields.register({
       name: 'image-gallery',
       plugin: PLUGIN_ID,
-      type: 'json', // use JSON type to store an array of images
+      type: 'json',
       intlLabel: {
         id: 'image-gallery.label',
         defaultMessage: 'Image gallery',
@@ -32,7 +33,7 @@ export default {
         id: 'image-gallery.description',
         defaultMessage: 'Upload and arrange multiple images using drag and drop',
       },
-      icon: 'images', // you can use any icon here
+      icon: Images,
       components: {
         Input: async () => ImageGalleryCustomField,
       },
