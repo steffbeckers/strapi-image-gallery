@@ -22,6 +22,7 @@ export default {
 
     app.customFields.register({
       name: 'image-gallery',
+      plugin: PLUGIN_ID,
       type: 'json', // use JSON type to store an array of images
       intlLabel: {
         id: 'image-gallery.label',
