@@ -62,7 +62,7 @@
   "strapi": {
     "kind": "plugin",
     "name": "strapi-image-gallery",
-    "displayName": "Image Gallery",
+    "displayName": "Image gallery",
     "description": "Image gallery for Strapi"
   },
   "name": "@steffbeckers/strapi-image-gallery",

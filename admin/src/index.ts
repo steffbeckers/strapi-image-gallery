@@ -26,7 +26,7 @@ export default {
       type: 'json', // use JSON type to store an array of images
       intlLabel: {
         id: 'image-gallery.label',
-        defaultMessage: 'Image Gallery',
+        defaultMessage: 'Image gallery',
       },
       intlDescription: {
         id: 'image-gallery.description',
