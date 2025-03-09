@@ -21,6 +21,13 @@ export default {
       },
     });
 
+    app.registerPlugin({
+      id: PLUGIN_ID,
+      initializer: Initializer,
+      isReady: false,
+      name: PLUGIN_ID,
+    });
+
     app.customFields.register({
       name: 'image-gallery',
       plugin: PLUGIN_ID,
@@ -37,13 +44,6 @@ export default {
       components: {
         Input: async () => ImageGalleryCustomField,
       },
-    });
-
-    app.registerPlugin({
-      id: PLUGIN_ID,
-      initializer: Initializer,
-      isReady: false,
-      name: PLUGIN_ID,
     });
   },
 
