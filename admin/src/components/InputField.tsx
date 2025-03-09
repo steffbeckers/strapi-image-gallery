@@ -40,17 +40,13 @@ const SortableItem = ({
   );
 };
 
-interface ImageGalleryCustomFieldProps {
+interface InputFieldProps {
   name: string;
   value: any[];
   onChange: (value: any[]) => void;
 }
 
-const ImageGalleryCustomField: React.FC<ImageGalleryCustomFieldProps> = ({
-  name,
-  value,
-  onChange,
-}) => {
+const InputField: React.FC<InputFieldProps> = ({ name, value, onChange }) => {
   // Keep local state; if no value is set, default to an empty array.
   const [images, setImages] = useState<any[]>(value || []);
 
@@ -102,4 +98,4 @@ const ImageGalleryCustomField: React.FC<ImageGalleryCustomFieldProps> = ({
   );
 };
 
-export default ImageGalleryCustomField;
+export default InputField;

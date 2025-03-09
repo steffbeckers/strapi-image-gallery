@@ -2,7 +2,7 @@ import { getTranslation } from './utils/getTranslation';
 import { PLUGIN_ID } from './pluginId';
 import { Initializer } from './components/Initializer';
 import { PluginIcon } from './components/PluginIcon';
-import ImageGalleryCustomField from './components/ImageGalleryCustomField';
+import InputField from './components/InputField';
 import { Images } from '@strapi/icons';
 
 export default {
@@ -29,20 +29,20 @@ export default {
     });
 
     app.customFields.register({
-      name: 'image-gallery',
-      plugin: PLUGIN_ID,
+      name: 'input-field',
+      pluginId: PLUGIN_ID,
       type: 'json',
       intlLabel: {
-        id: 'image-gallery.label',
+        id: 'input-field.label',
         defaultMessage: 'Image gallery',
       },
       intlDescription: {
-        id: 'image-gallery.description',
+        id: 'input-field.description',
         defaultMessage: 'Upload and arrange multiple images using drag and drop',
       },
       icon: Images,
       components: {
-        Input: async () => ImageGalleryCustomField,
+        Input: async () => InputField,
       },
     });
   },
